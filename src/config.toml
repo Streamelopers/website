@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://streamelopers.org/"
 languageCode = "es-DO"
 title = "Streamelopers"
+theme = "hugo-cards"
