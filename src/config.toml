@@ -1,4 +1,3 @@
 baseURL = "https://streamelopers.org/"
 languageCode = "es-DO"
-title = "Streamelopers"
-theme = "hugo-cards"
+title = "Streamelopers - Transmitimos eventos tecnológicos"

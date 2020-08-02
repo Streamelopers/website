@@ -1,1 +1,4 @@
+node_modules/
 src/resources/*
+public/
+.DS_Store
