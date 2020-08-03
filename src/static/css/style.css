@@ -1,12 +1,10 @@
 section {
     min-height:450px;
 }
-
 section.header-video {
     position: relative;
     background-color: black;
-    height: 450px;
-    min-height: 25rem;
+    min-height: 600px;
     width: 100%;
     overflow: hidden;
   }
@@ -42,6 +40,11 @@ section.header-video {
     z-index: 1;
   }
   
+  .bg-green{
+      background-color:#00a99e;
+      color:white;
+  }
+
   @media (pointer: coarse) and (hover: none) {
     section.header-video {
       background: gray no-repeat center center scroll;
@@ -50,3 +53,5 @@ section.header-video {
       display: none;
     }
   }
+
+
