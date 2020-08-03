@@ -1,39 +1,52 @@
-.container {
-    max-width: 960px;
+section {
+    min-height:450px;
+}
+
+section.header-video {
+    position: relative;
+    background-color: black;
+    height: 450px;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
   }
   
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
-    background-color: rgba(255, 255, 255, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
+  section.header-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
   
-  
-  /*
-   * Extra utilities
-   */
-  
-  .flex-equal > * {
-    -ms-flex: 1;
-    flex: 1;
+  section.header-video .container {
+    position: relative;
+    z-index: 2;
   }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      -ms-flex: 1;
-      flex: 1;
+  
+  section.header-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    section.header-video {
+      background: gray no-repeat center center scroll;
+    }
+    section.header-video video {
+      display: none;
     }
   }
-  
-  .overflow-hidden { overflow: hidden; }
