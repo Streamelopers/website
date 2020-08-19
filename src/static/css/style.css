@@ -2,12 +2,12 @@ section {
     min-height:450px;
 }
 section.header-video {
-    position: relative;
-    background-color: black;
-    min-height: 600px;
-    width: 100%;
-    overflow: hidden;
-  }
+  position: relative;
+  background-color: black;
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
 
 section.header-video video {
   position: absolute;
@@ -54,6 +54,23 @@ section.header-video .overlay {
   }
 }
 
+a.btn-patreon
+{
+  align-items: center;
+  text-align:center;
+  display:block;
+  backface-visibility: hidden;
+  background-color: rgb(232, 91, 70);
+  color: rgb(255, 255, 255) !important;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(232, 91, 70);
+  border-image: initial;
+  cursor: pointer;
+  text-decoration: none;
+  padding:10px;
+}
 
 .container-wall-feed {
   background-color:white !important;
