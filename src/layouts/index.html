@@ -5,7 +5,7 @@
     <source src="videos/background_video.mp4" type="video/mp4">
   </video>
   <div class="container p-x-sm">
-    <div class="row align-items-center">
+    <div class="row align-items-center" style="margin-top:50px">
       <div class="col-lg-6 text-center mx-auto">
         <img src="img/logo/logo-grande-transparente.png" class="img-fluid"/>
         <p>Transmitimos charlas de comunidades tecnológicas</p>
@@ -26,29 +26,27 @@
 
 <section class="jumbotron bg-white">
   <div class="container">
-    <div class="text-center align-items-center">
-      <h1>Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet</p>
-
-    </div>
+      <div clas="row">
+        <div class="col-sm-12 text-center">
+          <h1>Últimas transmisiones</h1><br/>
+        </div>
+      </div>
+      <rssapp-wall id="UAQtIhFwgo0aoqpy"></rssapp-wall>
   </div>
 </section>
 
 <section class="jumbotron bg-green">
-  <div class="container text-center">
-      <h1>Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet</p>
-      <div class="text-left">
-        <ul>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-        </ul>
+  <div class="container">
+    <div clas="row">
+      <div class="col-sm-12 text-center">
+        <h1>Últimos artículos</h1><br/>
       </div>
+    </div>
+    <rssapp-wall id="xOPS8XP4ox1zaCuZ"></rssapp-wall>
   </div>
 </section>
 
+<!--
 <section class="jumbotron bg-white">
   <div class="container">
     <div class="text-center align-items-center">
@@ -58,7 +56,6 @@
     </div>
   </div>
 </section>
-
 <section class="jumbotron bg-green">
   <div class="container">
     <div class="text-center align-items-center">
@@ -67,4 +64,9 @@
     </div>
   </div>
 </section>
+-->
+{{end}}
+
+{{ define "scripts" }}
+<script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 {{end}}
