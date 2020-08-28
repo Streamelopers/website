@@ -1,41 +1,41 @@
 <head>
     <title>Streamelopers</title>
-    <meta name="title" content="Streamelopers">
-    <meta name="description" content="Transmitimos charlas de comunidades tecnológicas.">
+    <meta name="title" content="{{if .IsHome}}{{$.Site.Title}}{{else}}{{$.Site.Title}} - {{.Description}}{{end}}">
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://streamelopers.org/">
-    <meta property="og:title" content="Streamelopers">
-    <meta property="og:description" content="Transmitimos charlas de comunidades tecnológicas.">
-    <meta property="og:image" content="https://streamelopers.org/img/logo/logo-grande-blanco.png">
+    <meta property="og:url" content="{{.Site.BaseURL}}">
+    <meta property="og:title" content="{{if .IsHome}}{{$.Site.Title}}{{else}}{{$.Site.Title}} - {{.Description}}{{end}}">
+    <meta property="og:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+    <meta property="og:image" content="{{.Site.BaseURL}}img/logo/logo-grande-blanco.png">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://streamelopers.org/">
-    <meta property="twitter:title" content="Streamelopers">
-    <meta property="twitter:description" content="Transmitimos charlas de comunidades tecnológicas.">
-    <meta property="twitter:image" content="https://streamelopers.org/img/logo/logo-grande-blanco.png">
+    <meta property="twitter:url" content="{{.Site.BaseURL}}">
+    <meta property="twitter:title" content="{{if .IsHome}}{{$.Site.Title}}{{else}}{{$.Site.Title}} - {{.Description}}{{end}}">
+    <meta property="twitter:description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+    <meta property="twitter:image" content="{{.Site.BaseURL}}img/logo/logo-grande-blanco.png">
 
     <title>{{.Title}}</title>
     
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{.Site.BaseURL}}img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{.Site.BaseURL}}img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{.Site.BaseURL}}img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{.Site.BaseURL}}img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{.Site.BaseURL}}mg/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{.Site.BaseURL}}img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{.Site.BaseURL}}img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{.Site.BaseURL}}img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{.Site.BaseURL}}img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{.Site.BaseURL}}img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{.Site.BaseURL}}img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{.Site.BaseURL}}img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{.Site.BaseURL}}img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{.Site.BaseURL}}img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css" />
 </head>

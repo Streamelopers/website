@@ -1,0 +1,6 @@
+baseURL = "https://localhost:1313/"
+languageCode = "es-DO"
+title = "Streamelopers"
+
+[params]
+  description = "Transmitimos eventos de comunidades tecnológicas"
